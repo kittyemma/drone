@@ -38,19 +38,19 @@ function fly(robot) {
     });
 
     bot.drone.left(0.2);
-    after(3*1000,function() {
+    after(5*1000,function() {
         bot.drone.left(0)
     });
 
     bot.drone.up(0.3);
-    after(1*1000,function(){
+    after(7*1000,function(){
         bot.drone.up(0)
     });
 
-    after(30*1000, function() {
+    after(10*1000, function() {
         bot.drone.land();
     });
-    after(35*1000, function() {
+    after(15*1000, function() {
         bot.drone.stop();
     });
 
