@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <style> img, canvas {position: absolute;}  </style>
+    <meta charset="UTF-8">
+    <script src="lib/jquery.js"></script>
+    <script src="lib/tracking-min.js"></script>
+    <script src="lib/tracking.js"></script>
+    <script src="drone-frontend.js"></script>
+    <script src="utils/colorTrackerUtils.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <title> Drone Obstacle Course</title>
+</head>
+<body class="container">
+<h1 class="text-center">Drone Vision</h1>
+<div id="example" class="row">
+    <div class="col-md-8">
+        <!-- The Drone view -->
+        <img class="drone" src="snapshots/camera2.png" width="640" height="360"/>
+        <canvas class="canvas" width="640" height="360"></canvas>
+
+    </div>
+    <div class="col-md-4">
+        <h2>What does it see?</h2>
+        <div class="output">
+            Colours!
+        </div>
+    </div>
+</div>
+</body>
+</html>
